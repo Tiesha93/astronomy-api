@@ -1,0 +1,65 @@
+/*body*/
+body{
+    background-image:url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows:repeat(3, 150px);
+    grid-template-areas: "header" "main" "footer";
+    grid-gap: 50px;
+    justify-content: center;
+}
+
+/*header.main*/
+header, main{
+    display: grid;
+    justify-content: center;
+}
+
+/*footer*/
+footer{
+    display: grid;
+    color: white;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+}
+
+
+/*section*/
+section{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    font-size: 40px;
+}
+
+
+/*moon-illumination*/
+.sunset, .sunrise, .moonset, .moonrise, .moon-phase, .moon-illumination{
+    width: 222px;
+    height: 142px;
+    border: 1px;
+    border-style: solid;
+    border-color: peachpuff;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 6px;
+}
+
+/*h1*/
+h1{
+    color: white;
+}
+
+/*h2*/
+h2{
+    color: white;
+}
+
+/*img*/
+img{
+    color: white;
+}
