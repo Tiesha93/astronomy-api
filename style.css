@@ -1,65 +1,114 @@
 /*body*/
-body{
-    background-image:url(images/background.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 50vh;
-    margin: 0;
-    display: grid;
-    grid-template-rows:repeat(3, 150px);
-    grid-template-areas: "header" "main" "footer";
-    grid-gap: 50px;
+ body{
+    font-family: 'Lora', serif;
+    font-family: 'Noto Serif', serif;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #1E2852;
+}
+
+
+/*header*/
+/*add d0 after the hexa color to have the effect of transparency. Opacity does the same.*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#4B666Bd0;
+}
+
+
+#img{
+    color:  #171f42;
+}
+.heading {
+    font-size: x-large;
+    color: #ffffffd0;
+}
+/*main*/
+main{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 75vh;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    border-radius: 20px;
+    background: #4B666Bd0;
+    color:#cdd3eed0;
+    margin-top: 70px;
+}
+
+
+
+.search{
+    margin-bottom: 10px;;
+}
+
+input{
+    outline: none;
+    border: none;
+    border-radius: 18px;
+    background-color: #ffffffd0;
+    height: 20px;
+}
+
+
+button{
+    outline: none;
+    border: none;
+    border-radius: 18px;
+    background-color: #ffffffd0;
+    height: 20px;
+    width: 30px;
+}
+
+
+button:hover{
+    cursor: pointer;
+    background-color: white;
+}
+/*astronomy*/
+.astronomy.loading{
+    visibility: hidden;
+}
+
+
+.astronomy.loading::after{
+    visibility: visible;
+    content: "Loading....";
+    color: whitesmoke;
+}
+
+h2.city{
+    margin-left: 20px;
+    font-size: x-large;
+    color: #cdd3ee;
+}
+
+
+
+.img{
+    color:#171f42;
+}
+
+.img, .sunrise, .sunset, .moonrise, .moonset, .moon-phase, .moon-illumination{
+    display: flex;
     justify-content: center;
 }
 
-/*header.main*/
-header, main{
-    display: grid;
-    justify-content: center;
-}
 
-/*footer*/
-footer{
-    display: grid;
-    color: white;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-}
-
-
-/*section*/
-section{
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: space-between;
-    font-size: 40px;
-}
-
-
-/*moon-illumination*/
-.sunset, .sunrise, .moonset, .moonrise, .moon-phase, .moon-illumination{
-    width: 222px;
-    height: 142px;
-    border: 1px;
-    border-style: solid;
-    border-color: peachpuff;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    margin-left: 6px;
-}
-
-/*h1*/
-h1{
-    color: white;
-}
-
-/*h2*/
-h2{
-    color: white;
-}
-
-/*img*/
-img{
-    color: white;
+.sunrise, .sunset, .moonrise, .moonset, .moon-phase, .moon-illumination{
+    font-size: 20px;
+    border-bottom-width: 3px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-style:solid ;
+    border-color:#303E42;
 }
