@@ -10,18 +10,22 @@ const astrology ={
         .then((data) => this.displayAstrology(data));
   },
         displayAstrology: function(data){
-           console.log(data.location);
-           console.log(data.astronomy.astro);
-           const {name} = data.location;
-           const {sunrise, sunset, moonrise, moonset, moon_phase, moon_illumination} = data.astronomy.astro;
-           document.querySelector(".city").innerText = "Astrology in " + name;
-           document.querySelector(".sunrise").innerText = "Sunrise:" + sunrise;
-           document.querySelector(".sunset").innerText = "Sunset:" + sunset;
-           document.querySelector(".moonrise").innerText = "Moonrise:" + moonrise;
-           document.querySelector(".moonset").innerText = "Moonset:" + moonset;
-           document.querySelector(".moon-phase").innerText = "MoonPhase:" + moon_phase;
-           document.querySelector(".moon-illumination").innerText = "MoonLight:" + moon_illumination;
-           document.querySelector(".astronomy").classList.remove("loading");
+         if(data.location && data.astronomy){
+            const {name} = data.location;
+            const {sunrise, sunset, moonrise, moonset, moon_phase, moon_illumination} = data.astronomy.astro;
+            document.querySelector(".city").innerText = "Astrology in " + name;
+            document.querySelector(".sunrise").innerText = "Sunrise: " + sunrise;
+            document.querySelector(".sunset").innerText = "Sunset: " + sunset;
+            document.querySelector(".moonrise").innerText = "Moonrise: " + moonrise;
+            document.querySelector(".moonset").innerText = "Moonset: " + moonset;
+            document.querySelector(".moon-phase").innerText = "MoonPhase: " + moon_phase;
+            document.querySelector(".moon-illumination").innerText = "MoonLight: " + moon_illumination;
+            document.querySelector(".astronomy").classList.remove("loading");
+            document.querySelector(".error").innerText = "";
+         }
+         else {
+            document.querySelector(".error").innerText = "City not found ";
+         }
        },
  /*This querySelector will get the content of the search bar when you type a city in*/
     search: function(){
