@@ -126,3 +126,23 @@ h2.city{
     border-style:solid ;
     border-color:#303E42;
 }
+
+
+/*footer*/
+footer{
+ display: flex;
+ align-items: center;
+ font-size: 20px;
+ color: #ffffffd0;
+}
+
+
+footer>a{
+    font-size: 20px;
+    color: #ffffffd0;
+}
+
+
+footer>a:hover{
+    color: #4B666Bd0;
+}
