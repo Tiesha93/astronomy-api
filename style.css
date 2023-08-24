@@ -43,11 +43,10 @@ main{
     box-shadow: 2px 0px 10px #bbbbbbd0;
     background: #4B666Bd0;
     color:#cdd3eed0;
-    margin-top: 70px;
+    margin-top: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 
 
 .search{
@@ -130,19 +129,30 @@ h2.city{
 
 /*footer*/
 footer{
+    height: 0px;
+}
+
+
+.footer{
  display: flex;
  align-items: center;
  font-size: 20px;
  color: #ffffffd0;
+ height: 0;
 }
 
 
-footer>a{
+.footer>a{
     font-size: 20px;
     color: #ffffffd0;
 }
 
 
-footer>a:hover{
+.footer>a:hover{
     color: #4B666Bd0;
+}
+
+
+p{
+    margin: 0;
 }
