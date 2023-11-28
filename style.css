@@ -1,5 +1,15 @@
 /*body*/
- body{
+
+#bg {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+ body {
     font-family: 'Lora', serif;
     font-family: 'Noto Serif', serif;
     font-family: 'Work Sans', sans-serif;
@@ -10,7 +20,8 @@
 
 /*header*/
 /*add d0 after the hexa color to have the effect of transparency. Opacity does the same.*/
-header{
+
+header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,19 +29,26 @@ header{
 }
 
 
-#img{
+#img {
     color:  #171f42;
 }
+
+
 .heading {
     font-size: x-large;
     color: #ffffffd0;
 }
+
+
 /*main*/
-main{
+
+main {
     display: flex;
     justify-content: center;
 }
-.card{
+
+
+.card {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -49,11 +67,12 @@ main{
 }
 
 
-.search{
+.search {
     margin-bottom: 10px;;
 }
 
-input{
+
+input {
     outline: none;
     border: none;
     border-radius: 18px;
@@ -62,7 +81,7 @@ input{
 }
 
 
-button{
+button {
     outline: none;
     border: none;
     border-radius: 18px;
@@ -72,25 +91,26 @@ button{
 }
 
 
-button:hover{
+button:hover {
     cursor: pointer;
     background-color: white;
 }
 
 
-.error{
+.error {
     color: #eaa1a0;
 }
 
 
 /*astronomy*/
-.astronomy.loading{
+
+.astronomy.loading {
     visibility: hidden;
     position: relative;
 }
 
 
-.astronomy.loading:before{
+.astronomy.loading:before {
     visibility: visible;
     content: "Loading...";
     color: whitesmoke;
@@ -98,25 +118,26 @@ button:hover{
     top: 0;
 }
 
-h2.city{
+
+h2.city {
     margin-left: 20px;
     font-size: x-large;
     color: #cdd3ee;
 }
 
 
-
-.img{
+.img {
     color:#171f42;
 }
 
-.img, .sunrise, .sunset, .moonrise, .moonset, .moon-phase, .moon-illumination{
+
+.img, .sunrise, .sunset, .moonrise, .moonset, .moon-phase, .moon-illumination {
     display: flex;
     justify-content: center;
 }
 
 
-.sunrise, .sunset, .moonrise, .moonset, .moon-phase, .moon-illumination{
+.sunrise, .sunset, .moonrise, .moonset, .moon-phase, .moon-illumination {
     font-size: 20px;
     border-bottom-width: 3px;
     border-top-width: 0;
@@ -128,31 +149,36 @@ h2.city{
 
 
 /*footer*/
-footer{
-    height: 0px;
-}
 
 
-.footer{
+.footer {
  display: flex;
+ justify-content: center;
  align-items: center;
  font-size: 20px;
  color: #ffffffd0;
- height: 0;
+ margin-top: 20px;
 }
 
 
-.footer>a{
+.footer>a {
     font-size: 20px;
     color: #ffffffd0;
 }
 
 
-.footer>a:hover{
+.footer>a:hover {
     color: #4B666Bd0;
 }
 
 
-p{
+p {
     margin: 0;
+}
+
+
+@media screen and (max-width: 2560px) {
+    body {
+        width: 100%;
+    }
 }

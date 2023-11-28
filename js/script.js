@@ -18,8 +18,8 @@ const astrology ={
             document.querySelector(".sunset").innerText = "Sunset: " + sunset;
             document.querySelector(".moonrise").innerText = "Moonrise: " + moonrise;
             document.querySelector(".moonset").innerText = "Moonset: " + moonset;
-            document.querySelector(".moon-phase").innerText = "MoonPhase: " + moon_phase;
-            document.querySelector(".moon-illumination").innerText = "MoonLight: " + moon_illumination;
+            document.querySelector(".moon-phase").innerText = "Moon Phase: " + moon_phase;
+            document.querySelector(".moon-illumination").innerText = "Moon Illumination: " + moon_illumination;
             document.querySelector(".astronomy").classList.remove("loading");
             document.querySelector(".error").innerText = "";
          }
