@@ -1,10 +1,10 @@
-# Weather App
+# Astrology App
 
-You can access the Landing Page by visiting the following link: [Live Demo](https://Tiesha93.github.io/astronomy-api)
+You can access the Astrology App by visiting the following link: [Live Demo](https://Tiesha93.github.io/astronomy-api)
 
 # About the Project
 
-Astrology app created using vanilla JavaScript and APIs. You can search cities worldwide and get current and forecast weather features.
+Astrology app created using JavaScript and APIs. You can search cities worldwide and get current and forecast weather features.
 
 ## Features
 
