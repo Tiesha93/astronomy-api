@@ -27,3 +27,5 @@ API: <a href="https://https://www.weatherapi.com/">Astrology API</a>
 Font: <a href="https://fonts.google.com/">Google Fonts</a>
 \
 Icons: <a href="http://www.w3.org/TR/SVG">React Icons</a>
+\
+Star Particles: <a href="https://github.com/VincentGarreau/particles.js/">Particles.js</a>
